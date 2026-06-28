@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #040404;
+  --surface: #101010;
+  --surface-2: #181818;
+
+  --primary: #00ff88;
+  --primary-hover: #00d46f;
+
+  --text: #ffffff;
+  --text-muted: #9ca3af;
+
+  --border: rgba(255,255,255,.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+.glass {
+  background: rgba(255,255,255,.05);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.neon {
+  box-shadow:
+    0 0 25px rgba(0,255,136,.25),
+    0 0 60px rgba(0,255,136,.12);
+}
+@keyframes ticker{
+
+0%{
+
+transform:translateX(100%)
+
+}
+
+100%{
+
+transform:translateX(-100%)
+
+}
+
+}
